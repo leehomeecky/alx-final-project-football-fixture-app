@@ -1,0 +1,20 @@
+version: '0.0.1'
+
+services:
+  dev-env:
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: dev
+    working_dir: /app
+    networks:
+      - app
+    ports:
+      - 9800:9800
+    command: [sh, -c, 'npm run start:dev']
+    volumes:
+      - .:/app:delegated
+      - /app/node_modules
+
+networks:
+  app:
