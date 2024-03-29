@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { FixtureController } from './fixture.controller';
 import { FixtureService } from './fixture.service';
-import { CreateFixtureDto, UpdateFixtureDto } from './fixture.dto';
+import { CreateFixtureDto, UpdateFixtureDto } from '../../dto/fixture.dto';
 import { NotAcceptableException } from '@nestjs/common';
 
 describe('FixtureController', () => {

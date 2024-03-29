@@ -8,8 +8,9 @@ import { InjectModel } from '@nestjs/mongoose';
 import { PassportStrategy } from '@nestjs/passport';
 import { Model } from 'mongoose';
 import { Strategy, ExtractJwt } from 'passport-jwt';
-import { Role, User } from 'src/schema/user.schema';
+import { User } from 'src/schema/user.schema';
 import * as bcrypt from 'bcrypt';
+import { Role } from 'src/enum/user.enum';
 
 @Injectable()
 export class SuperAdminJwtStrategy extends PassportStrategy(
