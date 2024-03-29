@@ -1,21 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Schema as MongooseSchema, HydratedDocument } from 'mongoose';
 import { Team } from './team.schema';
+import { FixtureStatus, MatchType } from 'src/enum/fixture.enum';
 
 export type FixtureDocument = HydratedDocument<Fixture>;
-export enum FixtureStatus {
-  PENDING = 'PENDING',
-  COMPLETED = 'COMPLETED',
-}
-export enum MatchType {
-  PRESEASON = 'PRESEASON',
-  FRIENDLY = 'FRIENDLY',
-  QUALIFIERS = 'QUALIFIERS',
-  GROUP_STAGE = 'GROUP_STAGE',
-  QUATER_FINALS = 'QUARTER_FINALS',
-  SEMI_FINALS = 'SEMI_FINALS',
-  FINALS = 'FINALS',
-}
 
 @Schema()
 export class Fixture {
@@ -37,10 +25,10 @@ export class Fixture {
   @Prop({ required: true })
   referee: string;
 
-  @Prop({ requred: true, enum: MatchType })
+  @Prop({ required: true, enum: MatchType })
   matchType: MatchType;
 
-  @Prop({ requred: true, type: Date })
+  @Prop({ required: true, type: Date })
   matchDate: Date;
 
   @Prop({ type: Date, default: Date.now })

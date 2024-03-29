@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common';
 import mongoose from 'mongoose';
 import { Team } from 'src/schema/team.schema';
-import { CreateTeamDto, UpdateTeamDto } from './team.dto';
+import { CreateTeamDto, UpdateTeamDto } from '../../dto/team.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { unlink } from 'fs';
 

@@ -1,7 +1,7 @@
 import { Controller, Get, Req, Res, UseInterceptors } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Request, Response } from 'express';
-import { FixtureFilterDto } from './modules/fixture/fixture.dto';
+import { FixtureFilterDto } from './dto/fixture.dto';
 import { CacheInterceptor } from '@nestjs/cache-manager';
 
 @Controller()

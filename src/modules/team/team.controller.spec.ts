@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { TeamController } from './team.controller';
 import { TeamService } from './team.service';
-import { CreateTeamDto, UpdateTeamDto } from './team.dto';
+import { CreateTeamDto, UpdateTeamDto } from '../../dto/team.dto';
 import { NotAcceptableException } from '@nestjs/common';
 
 describe('TeamController', () => {

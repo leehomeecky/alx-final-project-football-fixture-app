@@ -16,7 +16,7 @@ import {
   CreateFixtureDto,
   FixtureFilterDto,
   UpdateFixtureDto,
-} from './fixture.dto';
+} from '../../dto/fixture.dto';
 import { UserGuard } from 'src/guards/user.guard';
 import { Request } from 'express';
 import { CacheInterceptor } from '@nestjs/cache-manager';
