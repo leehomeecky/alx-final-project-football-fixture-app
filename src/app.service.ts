@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { FixtureService } from './modules/fixture/fixture.service';
-import { FixtureFilterDto } from './modules/fixture/fixture.dto';
+import { FixtureFilterDto } from './dto/fixture.dto';
 
 @Injectable()
 export class AppService {

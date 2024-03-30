@@ -8,8 +8,8 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { Fixture, FixtureStatus, MatchType } from 'src/schema/fixture.schema';
-import { CreateFixtureDto, UpdateFixtureDto } from './fixture.dto';
+import { Fixture } from 'src/schema/fixture.schema';
+import { CreateFixtureDto, UpdateFixtureDto } from '../../dto/fixture.dto';
 import { DEFAULT_LIMIT } from 'src/utils/constant';
 import * as moment from 'moment';
 import { TeamService } from '../team/team.service';

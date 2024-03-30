@@ -1,12 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Schema as MongooseSchema, HydratedDocument } from 'mongoose';
+import { Role } from 'src/enum/user.enum';
 
 export type UserDocument = HydratedDocument<User>;
-export enum Role {
-  USER = 'USER',
-  ADMIN = 'ADMIN',
-  SUPER_ADMIN = 'SUPER_ADMIN',
-}
 
 @Schema()
 export class User {

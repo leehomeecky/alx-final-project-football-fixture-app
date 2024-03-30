@@ -21,7 +21,7 @@ import { AdminGuard } from 'src/guards/admin.guard';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { MulterConfig } from 'src/config/multer.config';
 import { imageFileFilter } from 'src/utils/multer.utils';
-import { CreateTeamDto, UpdateTeamDto } from './team.dto';
+import { CreateTeamDto, UpdateTeamDto } from '../../dto/team.dto';
 import { CacheInterceptor } from '@nestjs/cache-manager';
 
 @Controller('team')

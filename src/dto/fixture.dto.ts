@@ -8,7 +8,7 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
-import { FixtureStatus, MatchType } from 'src/schema/fixture.schema';
+import { FixtureStatus, MatchType } from 'src/enum/fixture.enum';
 
 export class CreateFixtureDto {
   @IsString()
